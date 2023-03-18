@@ -1,0 +1,23 @@
+{
+    "name": "package/item",
+    "description": "Add item automatically",
+    "authors": [{
+        "name": "item"
+    }],
+    "require": {
+        "laravel/framework": "10.*"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Package\\Item\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Package\\Item\\ItemServiceProvider"
+            ]
+        }
+    }
+}
