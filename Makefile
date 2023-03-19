@@ -1,13 +1,13 @@
 install:
 	# mkdir src
 	# mkdir package
-	@make build
-	@make up
-	docker compose exec app composer create-project --prefer-dist laravel/laravel .
-	docker compose exec app php artisan key:generate
-	docker compose exec app php artisan storage:link
-	docker compose exec app chmod -R 777 storage bootstrap/cache
-	@make fresh
+	# @make build
+	# @make up
+	# docker compose exec app composer create-project --prefer-dist laravel/laravel .
+	# docker compose exec app php artisan key:generate
+	# docker compose exec app php artisan storage:link
+	# docker compose exec app chmod -R 777 storage bootstrap/cache
+	# @make fresh
 up:
 	docker compose up -d
 build:
