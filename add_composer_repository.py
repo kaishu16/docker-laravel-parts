@@ -4,7 +4,7 @@ file = open('src/composer.json')
 value = json.load(file)
 value['repositories'].append({
     "type": "path",
-    "url": "./package/item",
+    "url": "./package/src/item",
     "options": {
         "symlink": True
     }
