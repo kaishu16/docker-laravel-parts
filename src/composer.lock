@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "121ea3a2fffe49b3ef9aa4d064b28c19",
+    "content-hash": "fa90d8c5b243d16d554c9c78ae5c1a9c",
     "packages": [
         {
             "name": "brick/math",
@@ -2202,6 +2202,44 @@
                 }
             ],
             "time": "2023-02-08T01:06:31+00:00"
+        },
+        {
+            "name": "package/item",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "./package/item",
+                "reference": "02c4687f46bf4e68349970a9cff4978d6f78d495"
+            },
+            "require": {
+                "laravel/framework": "10.*"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Package\\Item\\ItemServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Package\\Item\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "item"
+                }
+            ],
+            "description": "Add item automatically",
+            "transport-options": {
+                "symlink": true,
+                "relative": true
+            }
         },
         {
             "name": "phpoption/phpoption",
@@ -7814,8 +7852,10 @@
         }
     ],
     "aliases": [],
-    "minimum-stability": "stable",
-    "stability-flags": [],
+    "minimum-stability": "dev",
+    "stability-flags": {
+        "package/item": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
