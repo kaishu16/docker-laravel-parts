@@ -10,7 +10,7 @@
   "repositories": [
     {
       "type": "path",
-      "url": "./package/item",
+      "url": "./package/src/item",
       "options": {
         "symlink": true
       }
@@ -74,6 +74,6 @@
       "php-http/discovery": true
     }
   },
-  "minimum-stability": "stable",
+  "minimum-stability": "dev",
   "prefer-stable": true
 }
