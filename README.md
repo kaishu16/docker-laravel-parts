@@ -19,5 +19,5 @@ git checkout -b auth
 
 ## 機能パーツ作成方法
 - 記述は全てsrc/package/src/ブランチ名　ディレクトリの配下に作成してください。
-- 
+- 初めて動作確認する際は、add_composer_repositoryのurl部分を編集し、 node add_composer_respository.jsを行ってください。
 
