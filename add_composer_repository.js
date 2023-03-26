@@ -4,7 +4,7 @@ const jsonObject = JSON.parse(fs.readFileSync('./src/composer.json', 'utf8'));
 
 jsonObject.repositories.push({
     "type": "path",
-    "url": "./package/src/", //./package/src/機能ブランチ名　とする
+    "url": "./package/src/item", //./package/src/機能ブランチ名　とする
     "options": {
         "symlink": true
     }

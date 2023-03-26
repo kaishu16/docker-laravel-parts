@@ -10,6 +10,9 @@ cd docker-laravel-parts
 make install
 ```
 
+## 注意点
+機能パーツブランチはmainブランチにマージしないでください。
+
 ## 機能パーツブランチ作成方法
 mainから開発ブランチを作成
 その際機能を示すブランチ名とする。
@@ -19,5 +22,13 @@ git checkout -b auth
 
 ## 機能パーツ作成方法
 - 記述は全てsrc/package/src/ブランチ名　ディレクトリの配下に作成してください。
-- 初めて動作確認する際は、add_composer_repositoryのurl部分を編集し、 node add_composer_respository.jsを行ってください。
+- src/package/src/ブランチ名/composer.json のnameはpackage/ブランチ名としてください。(この後のcomposer requireで使用します。)
+- 初めて動作確認する際は、add_composer_repositoryのurl部分を編集し、
+```bash
+node add_composer_respository.js
+docker compose exec app composer require package/ブランチ名
+```
+を行ってください。
+
+
 
